@@ -17,10 +17,14 @@
 
 </head>
 <body>
-<nav class="nav" aria-label="Sections">
+<nav class="nav" id="site-nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Opeyemi Adeniran</a>
-    <ul>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <ul id="nav-menu">
       <li><a href="#building">Building</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
@@ -53,7 +57,6 @@
     </div>
     <figure class="portrait" style="margin:0">
       <img src="assets/img/headshot.webp" alt="Portrait of Opeyemi Adeniran" width="640" height="621">
-      <figcaption class="tag">Published at <b>IEEE ICDM 2026</b></figcaption>
     </figure>
   </div>
 </header>
@@ -566,5 +569,6 @@
   </div>
 </footer>
 
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
